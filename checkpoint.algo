@@ -1,0 +1,29 @@
+ALGORITHM algorithm_name
+VAR
+    tab1: ARRAY_OF INTEGER[5];
+    tab2: ARRAY_OF INTEGER[5];
+    sum:=0
+    i,j:INTEGER
+BEGIN
+    write("donner les elements de tab1")
+     read(tab1)
+     write("donner les elements de tab2")
+     read (tab2)
+   
+    FOR i FROM 1 TO tab1.length step  DO
+    FOR J FROM 1 TO tab2.length step  DO
+    IF (tab1[i]=tab2[j]){
+        sum:=tab1[i]+tab2[j]
+    } 
+    else if(tab1[i]=!tab2[j]) {
+        sum:=tab1[i]+tab2[j]
+
+    }
+        
+    END_IF
+    END_IF
+   
+    END_FOR
+    write("la somme des elements est" ,sum)
+
+END
